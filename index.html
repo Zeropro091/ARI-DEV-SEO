@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ari | Creative Developer & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Ari, a systems thinker, experimental technologist, and creative developer specializing in AI, React, and full-stack engineering." />
+    <meta name="keywords" content="Ari, Creative Developer, AI Engineer, Systems Thinker, React, TypeScript, Full Stack, Portfolio" />
+    <meta name="author" content="Ari" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ari | Creative Developer & AI Engineer Portfolio" />
+    <meta property="og:description" content="Portfolio of Ari, a systems thinker, experimental technologist, and creative developer specializing in AI, React, and full-stack engineering." />
+    <meta property="og:image" content="/pic/IMG_9160.PNG" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ari | Creative Developer & AI Engineer Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Ari, a systems thinker, experimental technologist, and creative developer specializing in AI, React, and full-stack engineering." />
+    <meta name="twitter:image" content="/pic/IMG_9160.PNG" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Space Grotesk"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            colors: {
+              neu: {
+                bg: '#FFFDF5', // Cream
+                text: '#121212', // Soft Black
+                lime: '#D4FF70',
+                pink: '#FF90E8',
+                blue: '#90E0EF',
+                yellow: '#FFD60A',
+                purple: '#D8B4FE',
+                border: '#121212',
+              }
+            },
+            boxShadow: {
+              'neu': '4px 4px 0px 0px #121212',
+              'neu-sm': '2px 2px 0px 0px #121212',
+              'neu-pressed': '0px 0px 0px 0px #121212',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #FFFDF5;
+        color: #121212;
+      }
+      /* Risograph Grain Overlay */
+      .riso-grain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.4;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        mix-blend-mode: multiply;
+      }
+      /* Ink bleed effect for text */
+      .riso-text {
+        text-shadow: 1px 1px 0px rgba(255, 144, 232, 0.5), -1px -1px 0px rgba(144, 224, 239, 0.5);
+      }
+      /* Custom scrollbar for that raw feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFFDF5;
+        border-left: 2px solid #121212;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFD60A;
+        border: 2px solid #121212;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF90E8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.17",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
