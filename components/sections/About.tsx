@@ -2,6 +2,8 @@ import React from 'react';
 import { SectionHeader } from '../ui/SectionHeader';
 import { Code, Globe, Terminal, Cpu, FileText } from 'lucide-react';
 import { Sparkle, ArrowDoodle, CrossDoodle } from '../ui/Doodles';
+import img9158 from '../../pic/IMG_9158.PNG';
+import img9159 from '../../pic/IMG_9159.PNG';
 
 export const About: React.FC = () => {
   const skills = [
@@ -134,12 +136,12 @@ export const About: React.FC = () => {
 
             {/* Image 9158 */}
             <div className="border-4 border-neu-border shadow-neu overflow-hidden relative rotate-1 hover:rotate-0 transition-transform duration-300 h-48 md:h-64">
-               <img src="/pic/IMG_9158.PNG" alt="Ari working on hardware and software systems" loading="lazy" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
+               <img src={img9158} alt="Ari working on hardware and software systems" loading="lazy" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
             </div>
             
             {/* Image 9159 */}
             <div className="border-4 border-neu-border shadow-neu overflow-hidden relative -rotate-1 hover:rotate-0 transition-transform duration-300 h-48 md:h-64 mt-6">
-               <img src="/pic/IMG_9159.PNG" alt="Ari's experimental technology and AI projects" loading="lazy" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
+               <img src={img9159} alt="Ari's experimental technology and AI projects" loading="lazy" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
             </div>
           </div>
 

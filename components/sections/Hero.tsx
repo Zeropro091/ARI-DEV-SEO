@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../ui/Button';
 import { Sparkle, ArrowDoodle, Squiggle, BoxDoodle, WrenchAndGearDoodle } from '../ui/Doodles';
+import profilePic from '../../pic/IMG_9160.PNG';
 
 export const Hero: React.FC = () => {
   return (
@@ -61,7 +62,7 @@ export const Hero: React.FC = () => {
                   Replace the src attribute with the URL or path to your image.
                 */}
                 <img 
-                    src="/pic/IMG_9160.PNG" 
+                    src={profilePic} 
                     alt="Ari - Creative Developer, AI Engineer, and Systems Thinker" 
                     className="w-full h-full object-cover object-[center_20%] relative z-10 filter grayscale hover:grayscale-0 transition-all duration-500"
                     referrerPolicy="no-referrer"
